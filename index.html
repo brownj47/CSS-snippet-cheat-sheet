@@ -27,9 +27,11 @@
                 <pre><code>
 .row {
     display: flex;
-    lex-direction: row;
+    flex-direction: row;
     flex-wrap:wrap;
-}</code></pre>
+}
+
+</code></pre>
             </section>
         </section>
         <section class="tile">
@@ -39,13 +41,14 @@
                 </h2>
             </section>
             <section class="tile-content">
-                <p>this is the guide text</p>
+                <p>Create a flexbox in column layout.</p>
                 <pre><code>
-.row {
+.column {
     display: flex;
-    lex-direction: row;
-    flex-wrap:wrap;
-}</code></pre>
+    flex-direction: column;
+}
+
+</code></pre>
             </section>
         </section>
         <section class="tile">
@@ -55,13 +58,16 @@
                 </h2>
             </section>
             <section class="tile-content">
-                <p>this is the guide text</p>
+                <p>A 12 column layout using CSS grid.</p>
                 <pre><code>
-.row {
-    display: flex;
-    lex-direction: row;
-    flex-wrap:wrap;
-}</code></pre>
+.grid {
+    display: grid;
+    width: 100%;
+    grid-template-columns: 100%:
+    repeat(12, 1fr);
+}
+
+</code></pre>
             </section>
         </section>
         <section class="tile">
@@ -71,13 +77,14 @@
                 </h2>
             </section>
             <section class="tile-content">
-                <p>this is the guide text</p>
+                <p>A linear background gradient from top to bottom.</p>
                 <pre><code>
-.row {
-    display: flex;
-    lex-direction: row;
-    flex-wrap:wrap;
-}</code></pre>
+.linear-gradient-background {
+    background-image: linear-gradient
+    (red 0%, white 100%);
+}
+
+</code></pre>
             </section>
         </section>
         <section class="tile">
@@ -87,13 +94,19 @@
                 </h2>
             </section>
             <section class="tile-content">
-                <p>this is the guide text</p>
+                <p>Use transition and box-shadows to glow on hover.</p>
                 <pre><code>
-.row {
-    display: flex;
-    lex-direction: row;
-    flex-wrap:wrap;
-}</code></pre>
+.tile .tile-title {
+    border-radius: 8px;
+    transition: all 0.5s ease-in
+    -out;
+}
+
+.tile:hover,
+ .tile:hover .tile-title {
+    inset: 0 0 8px white;
+}
+.</code></pre>
             </section>
         </section>
         <section class="tile">
@@ -103,19 +116,17 @@
                 </h2>
             </section>
             <section class="tile-content">
-                <p>this is the guide text</p>
+                <p>Use position properties to raise an element higher than the natural starting point.</p>
                 <pre><code>
-.row {
-    display: flex;
-    lex-direction: row;
-    flex-wrap:wrap;
-}</code></pre>
+.tile-title {
+    position: relative;
+    margin-top: -20px;
+}
+
+</code></pre>
             </section>
         </section>
-
-
-
-
+        
     </main>
     <br>
     

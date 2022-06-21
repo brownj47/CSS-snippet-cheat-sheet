@@ -32,22 +32,26 @@ main {
 }
 
 .tile {
+    display: flex;
+    flex-direction: column;
+    flex: ;
     border: 3px dashed white;
     width: 32%;
     margin: 2px;
     color: var(--primary);
+    min-height: 100%;
 }
 .tile-title {
     position: relative;
     width: 75%;
-    top: -1em;
+    top: -1.5em;
     padding: 5px;
     margin: 0 auto;
     border: 3px solid white;
     border-radius: 10px;
     text-align: center;
 }
-.tile-title:hover {
+.tile:hover, .tile:hover .tile-title {
     box-shadow: 0 0 5px white;
 }
 

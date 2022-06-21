@@ -1,27 +1,32 @@
 :root {
-    --primary-text-color: rgb(189, 135, 187);
+    --primary: rgb(202, 90, 199);
 }
 
 * {
-    background-color: rgb(87, 87, 87);
+    background-color: rgb(65, 65, 65);
 }
 
 h1 {
     font-size: 2.5em;
     margin: 1em;
-    color: var(--primary-text-color);
+    color: var(--primary);
+}
+
+h2 {
+    font-size: 2em;
 }
 
 header {
     text-align: center;
-
+    color: white;
+    max-width: 75vw;
+    margin: 0 auto;
 }
 
 main {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    background-color: rgb(30, 135, 226);
     max-width: 75vw;
     margin: 0 auto
 }
@@ -30,29 +35,50 @@ main {
     border: 3px dashed white;
     width: 32%;
     margin: 2px;
+    color: var(--primary);
 }
 .tile-title {
-    display: inline-block;
+    position: relative;
+    width: 75%;
     top: -1em;
+    padding: 5px;
+    margin: 0 auto;
     border: 3px solid white;
-    color: var(--primary-text-color);
+    border-radius: 10px;
+    text-align: center;
+}
+.tile-title:hover {
+    box-shadow: 0 0 5px white;
 }
 
-/* .tile-content {
-    background-color: aliceblue;
-} */
-
 .tile-content pre {
-    background-color: var(--primary-text-color);
+    background: linear-gradient( -45deg, rgb(202, 90, 199), rgb(85, 85, 85));
+    color: black;
     border-radius: 5px;
     padding: 5px;
     margin: 5px;
+    user-select: all;
 }
 .tile-content code {
     background-color: inherit;
 }
-
+.tile-content p {
+    margin: 5px 10px;
+}
 
 footer {
     text-align: center;
+    color:var(--primary);
+}
+
+@media screen and (max-width : 992px) {
+    .tile {
+        width: 49%;
+    }
+}
+
+@media screen and (max-width : 768px) {
+    .tile {
+        width: 100%;
+    }
 }
